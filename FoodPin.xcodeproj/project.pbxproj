@@ -7,20 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161419182C577DB3006437AE /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161419172C577DB3006437AE /* ActivityView.swift */; };
 		1632EC3A2C57389A00A95974 /* FoodPinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1632EC392C57389A00A95974 /* FoodPinApp.swift */; };
 		1632EC3C2C57389A00A95974 /* RestaurantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1632EC3B2C57389A00A95974 /* RestaurantListView.swift */; };
 		1632EC3E2C57389A00A95974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1632EC3D2C57389A00A95974 /* Assets.xcassets */; };
 		1632EC412C57389A00A95974 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1632EC402C57389A00A95974 /* Preview Assets.xcassets */; };
 		1632EC482C57621900A95974 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1632EC472C57621900A95974 /* Restaurant.swift */; };
+		1665AC4B2C5786950067063B /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665AC4A2C5786950067063B /* RestaurantDetailView.swift */; };
+		1665AC502C5794D90067063B /* VarelaRound-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1665AC4F2C5794D90067063B /* VarelaRound-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		161419172C577DB3006437AE /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		1632EC362C57389A00A95974 /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1632EC392C57389A00A95974 /* FoodPinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPinApp.swift; sourceTree = "<group>"; };
 		1632EC3B2C57389A00A95974 /* RestaurantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListView.swift; sourceTree = "<group>"; };
 		1632EC3D2C57389A00A95974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1632EC402C57389A00A95974 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1632EC472C57621900A95974 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		1665AC4A2C5786950067063B /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
+		1665AC4F2C5794D90067063B /* VarelaRound-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VarelaRound-Regular.ttf"; sourceTree = "<group>"; };
+		1665AC512C5796040067063B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +60,8 @@
 		1632EC382C57389A00A95974 /* FoodPin */ = {
 			isa = PBXGroup;
 			children = (
+				1665AC512C5796040067063B /* Info.plist */,
+				1665AC4D2C5794880067063B /* Resources */,
 				1632EC4A2C576C4700A95974 /* View */,
 				1632EC492C57622700A95974 /* Model */,
 				1632EC392C57389A00A95974 /* FoodPinApp.swift */,
@@ -82,8 +91,26 @@
 			isa = PBXGroup;
 			children = (
 				1632EC3B2C57389A00A95974 /* RestaurantListView.swift */,
+				161419172C577DB3006437AE /* ActivityView.swift */,
+				1665AC4A2C5786950067063B /* RestaurantDetailView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1665AC4D2C5794880067063B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1665AC4E2C5794980067063B /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1665AC4E2C5794980067063B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1665AC4F2C5794D90067063B /* VarelaRound-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +173,7 @@
 			files = (
 				1632EC412C57389A00A95974 /* Preview Assets.xcassets in Resources */,
 				1632EC3E2C57389A00A95974 /* Assets.xcassets in Resources */,
+				1665AC502C5794D90067063B /* VarelaRound-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +185,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1632EC3C2C57389A00A95974 /* RestaurantListView.swift in Sources */,
+				1665AC4B2C5786950067063B /* RestaurantDetailView.swift in Sources */,
+				161419182C577DB3006437AE /* ActivityView.swift in Sources */,
 				1632EC3A2C57389A00A95974 /* FoodPinApp.swift in Sources */,
 				1632EC482C57621900A95974 /* Restaurant.swift in Sources */,
 			);
@@ -295,6 +325,7 @@
 				DEVELOPMENT_TEAM = ZGR5X2Y4JR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodPin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,6 +355,7 @@
 				DEVELOPMENT_TEAM = ZGR5X2Y4JR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodPin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
