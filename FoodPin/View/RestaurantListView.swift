@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RestaurantListView.swift
 //  FoodPin
 //
 //  Created by Che-lun Hu on 2024/7/29.
