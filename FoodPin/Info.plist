@@ -4,6 +4,9 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Kalam-Bold.ttf</string>
+		<string>Kalam-Light.ttf</string>
+		<string>Kalam-Regular.ttf</string>
 		<string>VarelaRound-Regular.ttf</string>
 	</array>
 </dict>

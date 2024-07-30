@@ -13,8 +13,14 @@
 		1632EC3E2C57389A00A95974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1632EC3D2C57389A00A95974 /* Assets.xcassets */; };
 		1632EC412C57389A00A95974 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1632EC402C57389A00A95974 /* Preview Assets.xcassets */; };
 		1632EC482C57621900A95974 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1632EC472C57621900A95974 /* Restaurant.swift */; };
+		1658509D2C5871A80007ABEE /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1658509C2C5871A80007ABEE /* UIColor+Ext.swift */; };
 		1665AC4B2C5786950067063B /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665AC4A2C5786950067063B /* RestaurantDetailView.swift */; };
 		1665AC502C5794D90067063B /* VarelaRound-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1665AC4F2C5794D90067063B /* VarelaRound-Regular.ttf */; };
+		1665AC552C57B4F30067063B /* Kalam-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1665AC522C57B4F30067063B /* Kalam-Regular.ttf */; };
+		1665AC562C57B4F30067063B /* Kalam-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1665AC532C57B4F30067063B /* Kalam-Bold.ttf */; };
+		1665AC572C57B4F30067063B /* Kalam-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1665AC542C57B4F30067063B /* Kalam-Light.ttf */; };
+		167634E92C58BBC600692936 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167634E82C58BBC600692936 /* ReviewView.swift */; };
+		168D41D22C587C6D00F18B73 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168D41D12C587C6D00F18B73 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +31,15 @@
 		1632EC3D2C57389A00A95974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1632EC402C57389A00A95974 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1632EC472C57621900A95974 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		1658509C2C5871A80007ABEE /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		1665AC4A2C5786950067063B /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
 		1665AC4F2C5794D90067063B /* VarelaRound-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VarelaRound-Regular.ttf"; sourceTree = "<group>"; };
 		1665AC512C5796040067063B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1665AC522C57B4F30067063B /* Kalam-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kalam-Regular.ttf"; sourceTree = "<group>"; };
+		1665AC532C57B4F30067063B /* Kalam-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kalam-Bold.ttf"; sourceTree = "<group>"; };
+		1665AC542C57B4F30067063B /* Kalam-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kalam-Light.ttf"; sourceTree = "<group>"; };
+		167634E82C58BBC600692936 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		168D41D12C587C6D00F18B73 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				1665AC512C5796040067063B /* Info.plist */,
+				1658509B2C5871630007ABEE /* Extensions */,
 				1665AC4D2C5794880067063B /* Resources */,
 				1632EC4A2C576C4700A95974 /* View */,
 				1632EC492C57622700A95974 /* Model */,
@@ -93,8 +106,18 @@
 				1632EC3B2C57389A00A95974 /* RestaurantListView.swift */,
 				161419172C577DB3006437AE /* ActivityView.swift */,
 				1665AC4A2C5786950067063B /* RestaurantDetailView.swift */,
+				168D41D12C587C6D00F18B73 /* MapView.swift */,
+				167634E82C58BBC600692936 /* ReviewView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1658509B2C5871630007ABEE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1658509C2C5871A80007ABEE /* UIColor+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		1665AC4D2C5794880067063B /* Resources */ = {
@@ -109,6 +132,9 @@
 			isa = PBXGroup;
 			children = (
 				1665AC4F2C5794D90067063B /* VarelaRound-Regular.ttf */,
+				1665AC532C57B4F30067063B /* Kalam-Bold.ttf */,
+				1665AC542C57B4F30067063B /* Kalam-Light.ttf */,
+				1665AC522C57B4F30067063B /* Kalam-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -171,9 +197,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1665AC572C57B4F30067063B /* Kalam-Light.ttf in Resources */,
 				1632EC412C57389A00A95974 /* Preview Assets.xcassets in Resources */,
 				1632EC3E2C57389A00A95974 /* Assets.xcassets in Resources */,
+				1665AC552C57B4F30067063B /* Kalam-Regular.ttf in Resources */,
 				1665AC502C5794D90067063B /* VarelaRound-Regular.ttf in Resources */,
+				1665AC562C57B4F30067063B /* Kalam-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,9 +213,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				167634E92C58BBC600692936 /* ReviewView.swift in Sources */,
+				168D41D22C587C6D00F18B73 /* MapView.swift in Sources */,
 				1632EC3C2C57389A00A95974 /* RestaurantListView.swift in Sources */,
 				1665AC4B2C5786950067063B /* RestaurantDetailView.swift in Sources */,
 				161419182C577DB3006437AE /* ActivityView.swift in Sources */,
+				1658509D2C5871A80007ABEE /* UIColor+Ext.swift in Sources */,
 				1632EC3A2C57389A00A95974 /* FoodPinApp.swift in Sources */,
 				1632EC482C57621900A95974 /* Restaurant.swift in Sources */,
 			);

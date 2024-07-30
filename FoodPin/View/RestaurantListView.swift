@@ -42,10 +42,9 @@ struct RestaurantListView: View {
                         // 將原本NavigationLink中的View移出，並給一個空視圖(不動好像也可以，反正都看不到了)且設透明度為0，然後在這個透明的導覽按鍵上把每個Restaurant的Row恢復。
                         // 就是把原本的導覽箭頭隱藏重新把遠本顯示的畫面蓋上去
                         NavigationLink(destination: RestaurantDetailView(restaurant: restaurants[index])) {
-//                            BasicTextImageRow(restaurant: $restaurants[index])
-                            EmptyView()
-                        }
-                        .opacity(0)
+                                EmptyView()
+                            }
+                            .opacity(0)
                         
                         BasicTextImageRow(restaurant: $restaurants[index])
                     }
@@ -73,11 +72,9 @@ struct RestaurantListView: View {
     RestaurantListView()
         .preferredColorScheme(.dark)
 }
-
 #Preview("BasicTextImageRow", traits: .sizeThatFitsLayout) {
     BasicTextImageRow(restaurant: .constant(Restaurant(name: "Cafe Deadend", type: "Coffee & Tea Shop", location: "G/F, 72 Po Hing Fong, Sheung Wan, Hong Kong", phone: "232-923423", description: "Searching for great breakfast eateries and coffee? This place is for you. We open at 6:30 every morning, and close at 9 PM. We offer espresso and espresso based drink, such as capuccino, cafe latte, piccolo and many more. Come over and enjoy a great meal.", image: "cafedeadend", isFavorite: true)))
 }
-
 #Preview("FullImageRow", traits: .sizeThatFitsLayout) {
     FullImageRow(imageName: "cafedeadend", name: "Cafe Deadend", type: "Cafe", location: "Hong Kong", isFavorite: .constant(true))
 }
@@ -188,7 +185,7 @@ struct FullImageRow: View {
                 VStack(alignment: .leading) {
                     Text(name)
                         .font(.system(.title2, design: .rounded))
-                        
+                    
                     Text(type)
                         .font(.system(.body, design: .rounded))
                     
@@ -203,7 +200,7 @@ struct FullImageRow: View {
                     Image(systemName: "heart.fill")
                         .foregroundStyle(.yellow)
                 }
-
+                
             }
             .padding(.horizontal)
             .padding(.bottom)
